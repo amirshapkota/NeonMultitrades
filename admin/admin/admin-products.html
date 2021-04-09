@@ -1,0 +1,579 @@
+<html lang="en"><!--<![endif]--><head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Manage Products - Neon</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link media="all" type="text/css" rel="stylesheet" href="../vendor/core/core/base/libraries/font-awesome/css/fontawesome.min.css">
+    <link media="all" type="text/css" rel="stylesheet" href="../vendor/core/core/base/libraries/simple-line-icons/css/simple-line-icons.css">
+    <link media="all" type="text/css" rel="stylesheet" href="../vendor/core/core/base/libraries/select2/css/select2.min.css">
+    <link media="all" type="text/css" rel="stylesheet" href="../vendor/core/core/base/libraries/select2/css/select2-bootstrap.min.css">
+    <link media="all" type="text/css" rel="stylesheet" href="../vendor/core/core/base/libraries/pace/pace-theme-minimal.css">
+    <link media="all" type="text/css" rel="stylesheet" href="../vendor/core/core/base/libraries/toastr/toastr.min.css">
+    <link media="all" type="text/css" rel="stylesheet" href="../vendor/core/core/base/libraries/mcustom-scrollbar/jquery.mCustomScrollbar.css">
+    <link media="all" type="text/css" rel="stylesheet" href="../vendor/core/core/base/libraries/bootstrap-datepicker/css/bootstrap-datepicker3.min.css">
+    <link media="all" type="text/css" rel="stylesheet" href="../vendor/core/core/base/libraries/spectrum/spectrum.css">
+    <link media="all" type="text/css" rel="stylesheet" href="../vendor/core/core/base/libraries/fancybox/jquery.fancybox.min.css">
+    <link media="all" type="text/css" rel="stylesheet" href="../vendor/core/core/base/libraries/bootstrap3-editable/css/bootstrap-editable.css">
+    <link media="all" type="text/css" rel="stylesheet" href="../vendor/core/core/base/libraries/datatables/media/css/dataTables.bootstrap.min.css">
+    <link media="all" type="text/css" rel="stylesheet" href="../vendor/core/core/base/libraries/datatables/extensions/Buttons/css/buttons.bootstrap.min.css">
+    <link media="all" type="text/css" rel="stylesheet" href="../vendor/core/core/base/libraries/datatables/extensions/Responsive/css/responsive.bootstrap.min.css">
+    <link media="all" type="text/css" rel="stylesheet" href="../vendor/core/core/base/css/core.css">
+    <link media="all" type="text/css" rel="stylesheet" href="../vendor/core/core/table/css/table.css">
+    <link media="all" type="text/css" rel="stylesheet" href="../vendor/core/core/base/css/themes/light.css">
+    <script src="../vendor/core/core/base/js/app.js" type="text/javascript"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-mousewheel/3.1.11/jquery.mousewheel.min.js"></script></head>
+    <body class="page-sidebar-closed-hide-logo page-content-white page-container-bg-solid  pace-done" style=""><div class="pace  pace-inactive"><div class="pace-progress" data-progress-text="100%" data-progress="99" style="transform: translate3d(100%, 0px, 0px);">
+      <div class="pace-progress-inner"></div>
+    </div>
+    <div class="pace-activity"></div></div>
+    <div id="global-icon-symbols" data-tg-refresh="global-icon-symbols" data-tg-refresh-always="true" style="display: none;">
+    
+    </div>
+    <div class="page-wrapper">
+    <div class="page-header navbar navbar-static-top">
+        <div class="page-header-inner">
+            <div class="page-logo">
+            <a href="vendor-dashboard.html">
+            <img src="../../logos/neon_b.png" alt="logo" style="width: 100; height: auto; margin-bottom: 20px; margin-top: -20px;">
+            </a>
+            <div class="menu-toggler sidebar-toggler">
+            <span></span>
+            </div>
+            </div>
+            <a href="javascript:;" class="menu-toggler responsive-toggler" data-toggle="collapse" data-target=".navbar-collapse">
+            <span></span>
+            </a>
+            <div class="top-menu">
+            <ul class="nav navbar-nav float-right">
+            <li class="dropdown dropdown-user">
+            <a href="javascript:void(0)" class="dropdown-toggle dropdown-header-name" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <span class="username">Company Name </span>
+            <i class="fa fa-angle-down"></i>
+            </a>
+            <ul class="dropdown-menu">
+            <li><a href="#" class="btn-logout"><i class="icon-key"></i> Logout</a></li>
+            </ul>
+            </li>
+            </ul>
+            </div>
+            </div>
+            </div>
+            <div class="clearfix"></div>
+            <div class="page-container">
+            <div class="page-sidebar-wrapper">
+            <div class="page-sidebar navbar-collapse collapse">
+            <div class="sidebar">
+            <div class="sidebar-content">
+            <ul class="page-sidebar-menu page-header-fixed" data-keep-expanded="false" data-auto-scroll="true" data-slide-speed="200" data-height="883">
+            <li class="nav-item  active " id="cms-core-dashboard">
+            <a href="../admin" class="nav-link nav-toggle">
+            <i class="fa fa-home"></i>
+            <span class="title">
+            Dashboard
+            </span>
+            </a>
+            </li>
+            <li class="nav-item " id="cms-plugins-ecommerce">
+            <a href="../admin/ecommerce/products.html" class="nav-link nav-toggle">
+            <i class="fa fa-shopping-cart"></i>
+            <span class="title">
+            Ecommerce
+            </span>
+            <span class="arrow "></span> </a>
+            <ul class="sub-menu  hidden-ul ">
+        
+ 
+                <li class="nav-item " id="cms-plugins-ecommerce.product">
+                    <a href="../admin/admin-products.html" class="nav-link">
+                    <i class="fa fa-camera"></i>
+                    Manage Products
+                    
+                    </a>
+                    </li>
+                    <li class="nav-item " id="cms-plugins-ecommerce.product">
+                        <a href="../admin/flash-sale.html" class="nav-link">
+                        <i class="fa fa-bolt"></i>
+                        Flash Sales
+                        
+                        </a>
+                        </li>
+                        <li class="nav-item " id="cms-plugins-ecommerce.product">
+                            <a href="../admin/orders.html" class="nav-link">
+                            <i class="fa fa-shopping-bag"></i>
+                            Manage Orders
+                            
+                            </a>
+                        </li>
+            
+            
+            
+
+            </ul>
+            </li>
+            </ul>
+            </div>
+            </div>
+            </div>
+            </div>
+            <div class="page-content-wrapper">
+            <div class="page-content " style="min-height: 850px;">
+            <ol class="breadcrumb">
+            <li class="breadcrumb-item active">Dashboard</li>
+            </ol>
+            <div class="clearfix"></div>
+            <div id="main">
+            <div id="dashboard-alerts"><!----></div>
+        
+            <div class="row">
+            </div>
+    <div class="clearfix"></div>
+    <div id="main">
+    <div class="table-wrapper">
+    <div class="table-configuration-wrap">
+    <span class="configuration-close-btn btn-show-table-options"><i class="fa fa-times"></i></span>
+    <div class="wrapper-filter">
+    <p>Filters</p>
+    <input type="hidden" class="filter-data-url" value="../tables/get-filter-input">
+    <div class="sample-filter-item-wrap hidden">
+    <div class="filter-item form-filter">
+    <div class="ui-select-wrapper">
+    <select name="filter_columns[]" class="ui-select filter-column-key">
+    <option value="">Select field</option>
+    <option value="ec_products.name">Name</option>
+    <option value="ec_products.order">Order</option>
+    <option value="ec_products.status">Status</option>
+    <option value="ec_products.created_at">Created At</option>
+    </select>
+    <svg class="svg-next-icon svg-next-icon-size-16">
+    <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#select-chevron"></use>
+    </svg>
+    </div>
+    <div class="ui-select-wrapper">
+    <select name="filter_operators[]" class="ui-select filter-operator filter-column-operator">
+    <option value="like">Contains</option>
+    <option value="=">Is equal to</option>
+    <option value=">">Greater than</option>
+    <option value="<">Less than</option>
+    </select>
+    <svg class="svg-next-icon svg-next-icon-size-16">
+    <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#select-chevron"></use>
+    </svg>
+    </div>
+    <span class="filter-column-value-wrap">
+    <input class="form-control filter-column-value" type="text" placeholder="Value" name="filter_values[]">
+    </span>
+    <span class="btn-remove-filter-item" title="Delete">
+    <i class="fa fa-trash text-danger"></i>
+    </span>
+    </div>
+    </div>
+    <form method="GET" action="../admin/ecommerce/products" accept-charset="UTF-8" class="filter-form">
+    <input type="hidden" name="filter_table_id" class="filter-data-table-id" value="table-products">
+    <input type="hidden" name="class" class="filter-data-class" value="Botble\Ecommerce\Tables\ProductTable">
+    <div class="filter_list inline-block filter-items-wrap">
+    <div class="filter-item form-filter  filter-item-default ">
+    <div class="ui-select-wrapper">
+    <select name="filter_columns[]" class="ui-select filter-column-key">
+    <option value="">Select field</option>
+    <option value="ec_products.name">Name</option>
+    <option value="ec_products.order">Order</option>
+    <option value="ec_products.status">Status</option>
+    <option value="ec_products.created_at">Created At</option>
+    </select>
+    <svg class="svg-next-icon svg-next-icon-size-16">
+    <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#select-chevron"></use>
+    </svg>
+    </div>
+    <div class="ui-select-wrapper">
+    <select name="filter_operators[]" class="ui-select filter-column-operator">
+    <option value="like">Contains</option>
+    <option value="=" selected="">Is equal to</option>
+    <option value=">">Greater than</option>
+    <option value="<">Less than</option>
+    </select>
+    <svg class="svg-next-icon svg-next-icon-size-16">
+    <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#select-chevron"></use>
+    </svg>
+    </div>
+    <span class="filter-column-value-wrap">
+    <input class="form-control filter-column-value" type="text" placeholder="Value" name="filter_values[]" value="">
+    </span>
+    <span class="btn-reset-filter-item" title="Reset">
+    <i class="fa fa-eraser text-info" style="font-size: 13px;"></i>
+    </span>
+    </div>
+    </div>
+    <div style="margin-top: 10px;">
+    <a href="javascript:;" class="btn btn-secondary add-more-filter">Add additional filter</a>
+    <a href="../admin/ecommerce/products" class="btn btn-info  hidden ">Reset</a>
+    <button type="submit" class="btn btn-primary btn-apply">Apply</button>
+    </div>
+    </form>
+    </div>
+    </div>
+    <div class="portlet light bordered portlet-no-padding">
+    <div class="portlet-title">
+    <div class="caption">
+    <div class="wrapper-action">
+    <div class="btn-group">
+    <a class="btn btn-secondary dropdown-toggle" href="#" data-toggle="dropdown">Bulk Actions
+     </a>
+    <ul class="dropdown-menu">
+    <li>
+    <div class="dropdown dropdown-hover">
+    <a href="javascript:;">Bulk changes
+    <i class="fa fa-angle-right"></i>
+    </a>
+    <div class="dropdown-content">
+    <a href="#" data-key="ec_products.name" data-class-item="Botble\Ecommerce\Tables\ProductTable" data-save-url="../tables/bulk-change/save" class="bulk-change-item">Name</a>
+    <a href="#" data-key="ec_products.order" data-class-item="Botble\Ecommerce\Tables\ProductTable" data-save-url="../tables/bulk-change/save" class="bulk-change-item">Order</a>
+    <a href="#" data-key="ec_products.status" data-class-item="Botble\Ecommerce\Tables\ProductTable" data-save-url="../tables/bulk-change/save" class="bulk-change-item">Status</a>
+    <a href="#" data-key="ec_products.created_at" data-class-item="Botble\Ecommerce\Tables\ProductTable" data-save-url="../tables/bulk-change/save" class="bulk-change-item">Created At</a>
+    </div>
+    </div>
+    </li>
+    <li>
+    <a href="../admin/ecommerce/products/items/destroy" class="delete-many-entry-trigger" data-class-item="Botble\Ecommerce\Tables\ProductTable">Delete</a>
+    </li>
+    </ul>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="portlet-body">
+    <div class="table-responsive  table-has-actions   table-has-filter ">
+    <div id="table-products_wrapper" class="dataTables_wrapper form-inline dt-bootstrap no-footer"><div class="dt-buttons btn-group flex-wrap">   <button class="btn btn-secondary action-item" tabindex="0" aria-controls="table-products" type="button"><span><span data-action="create" data-href="../admin/ecommerce/products/create"><i class="fa fa-plus"></i><a href="create.html"> Create</a></span></span></button> <div class="btn-group"></div> </div><div id="table-products_processing" class="dataTables_processing panel panel-default" style="display: none;"></div><table class="table table-striped table-hover vertical-middle dataTable no-footer dtr-inline" id="table-products" role="grid" aria-describedby="table-products_info"><thead><tr role="row"><th width="10px" class="text-left no-sort sorting_disabled" title="<input class=&quot;table-check-all&quot; data-set=&quot;.dataTable .checkboxes&quot; type=&quot;checkbox&quot;>" rowspan="1" colspan="1" style="width: 10px;" aria-label=""><input class="table-check-all" data-set=".dataTable .checkboxes" type="checkbox"></th><th title="ID" width="20px" class="column-key-id sorting_desc" tabindex="0" aria-controls="table-products" rowspan="1" colspan="1" style="width: 20px;" aria-sort="descending" aria-label="IDorderby asc">ID</th><th title="Thumbnail" width="100px" class="text-center column-key-image sorting" tabindex="0" aria-controls="table-products" rowspan="1" colspan="1" style="width: 100px;" aria-label="Thumbnailorderby asc">Thumbnail</th><th title="Name" class="text-left column-key-name sorting" tabindex="0" aria-controls="table-products" rowspan="1" colspan="1" aria-label="Nameorderby asc">Name</th><th title="Price" class="text-left column-key-price sorting" tabindex="0" aria-controls="table-products" rowspan="1" colspan="1" aria-label="Priceorderby asc">Price</th><th title="Quantity" class="text-left column-key-quantity sorting" tabindex="0" aria-controls="table-products" rowspan="1" colspan="1" aria-label="Quantityorderby asc">Quantity</th><th title="Sku" class="text-left column-key-sku sorting" tabindex="0" aria-controls="table-products" rowspan="1" colspan="1" aria-label="Skuorderby asc">Sku</th><th title="Order" width="50px" class="text-center column-key-order sorting" tabindex="0" aria-controls="table-products" rowspan="1" colspan="1" style="width: 50px;" aria-label="Orderorderby asc">Order</th><th title="Created At" width="100px" class="text-center column-key-created_at sorting" tabindex="0" aria-controls="table-products" rowspan="1" colspan="1" style="width: 100px;" aria-label="Created Atorderby asc">Created At</th><th title="Status" width="100px" class="text-center column-key-status sorting" tabindex="0" aria-controls="table-products" rowspan="1" colspan="1" style="width: 100px;" aria-label="Statusorderby asc">Status</th><th title="Operations" width="134px" class="text-center sorting_disabled" rowspan="1" colspan="1" style="width: 134px;" aria-label="Operations">Operations</th></tr></thead><tbody><tr role="row" class="odd"><td class="text-left no-sort dtr-control"><div class="text-left">
+        <div class="checkbox checkbox-primary table-checkbox">
+            <input type="checkbox" class="checkboxes" name="id[]" value="9">
+        </div>
+    </div></td><td class="column-key-id sorting_1">9</td><td class=" text-center column-key-image"><a href="../admin/edit.html" title="Samsung Smart Phone">
+        <img src="../storage/products/10-p-150x150.jpg" alt="Samsung Smart Phone" width="50">
+    </a>
+    </td><td class=" text-left column-key-name"><a href="../admin/edit.html">Samsung Smart Phone</a></td><td class=" text-left column-key-price">$32.75 <del class="text-danger">$59.00</del></td><td class=" text-left column-key-quantity">13</td><td class=" text-left column-key-sku">SW-166-A0</td><td class=" text-center column-key-order"><a data-type="text" data-pk="9" data-url="../admin/ecommerce/products/update-order-by" data-value="0" data-title="Order" class="editable editable-click" href="#">0</a>
+    </td><td class=" text-center column-key-created_at">2021-03-28</td><td class=" text-center column-key-status"><span class="label-success status-label">Published</span></td><td class=" text-center"><div class="table-actions">
+        
+                            <a href="../admin/edit.html" class="btn btn-icon btn-sm btn-primary" data-toggle="tooltip" data-original-title="Edit"><i class="fa fa-edit"></i></a>
+                
+                            <a href="#" class="btn btn-icon btn-sm btn-danger deleteDialog" data-toggle="tooltip" data-section="../admin/ecommerce/products/9" role="button" data-original-title="Delete">
+                    <i class="fa fa-trash"></i>
+                </a>
+                </div></td></tr><tr role="row" class="even"><td class="text-left no-sort dtr-control"><div class="text-left">
+        <div class="checkbox checkbox-primary table-checkbox">
+            <input type="checkbox" class="checkboxes" name="id[]" value="8">
+        </div>
+    </div></td><td class="column-key-id sorting_1">8</td><td class=" text-center column-key-image"><a href="../admin/edit.html" title="Smart Televisions">
+        <img src="../storage/products/9-p-150x150.jpg" alt="Smart Televisions" width="50">
+    </a>
+    </td><td class=" text-left column-key-name"><a href="../admin/edit.html">Smart Televisions</a></td><td class=" text-left column-key-price">$56.36 <del class="text-danger">$130.00</del></td><td class=" text-left column-key-quantity">16</td><td class=" text-left column-key-sku">SW-180-A0</td><td class=" text-center column-key-order"><a data-type="text" data-pk="8" data-url="../admin/ecommerce/products/update-order-by" data-value="0" data-title="Order" class="editable editable-click" href="#">0</a>
+    </td><td class=" text-center column-key-created_at">2021-03-28</td><td class=" text-center column-key-status"><span class="label-success status-label">Published</span></td><td class=" text-center"><div class="table-actions">
+        
+                            <a href="../admin/edit.html" class="btn btn-icon btn-sm btn-primary" data-toggle="tooltip" data-original-title="Edit"><i class="fa fa-edit"></i></a>
+                
+                            <a href="#" class="btn btn-icon btn-sm btn-danger deleteDialog" data-toggle="tooltip" data-section="../admin/ecommerce/products/8" role="button" data-original-title="Delete">
+                    <i class="fa fa-trash"></i>
+                </a>
+                </div></td></tr><tr role="row" class="odd"><td class="text-left no-sort dtr-control"><div class="text-left">
+        <div class="checkbox checkbox-primary table-checkbox">
+            <input type="checkbox" class="checkboxes" name="id[]" value="7">
+        </div>
+    </div></td><td class="column-key-id sorting_1">7</td><td class=" text-center column-key-image"><a href="../admin/ecommerce/products/edit/7" title="Audio Equipment">
+        <img src="../storage/products/4-p-150x150.jpg" alt="Audio Equipment" width="50">
+    </a>
+    </td><td class=" text-left column-key-name"><a href="../admin/edit.html">Audio Equipment</a></td><td class=" text-left column-key-price">$22.47 <del class="text-danger">$54.00</del></td><td class=" text-left column-key-quantity">15</td><td class=" text-left column-key-sku">SW-186-A0</td><td class=" text-center column-key-order"><a data-type="text" data-pk="7" data-url="../admin/ecommerce/products/update-order-by" data-value="0" data-title="Order" class="editable editable-click" href="#">0</a>
+    </td><td class=" text-center column-key-created_at">2021-03-28</td><td class=" text-center column-key-status"><span class="label-success status-label">Published</span></td><td class=" text-center"><div class="table-actions">
+        
+                            <a href="../admin/edit.html" class="btn btn-icon btn-sm btn-primary" data-toggle="tooltip" data-original-title="Edit"><i class="fa fa-edit"></i></a>
+                
+                            <a href="#" class="btn btn-icon btn-sm btn-danger deleteDialog" data-toggle="tooltip" data-section="../admin/ecommerce/products/7" role="button" data-original-title="Delete">
+                    <i class="fa fa-trash"></i>
+                </a>
+                </div></td></tr><tr role="row" class="even"><td class="text-left no-sort dtr-control"><div class="text-left">
+        <div class="checkbox checkbox-primary table-checkbox">
+            <input type="checkbox" class="checkboxes" name="id[]" value="6">
+        </div>
+    </div></td><td class="column-key-id sorting_1">6</td><td class=" text-center column-key-image"><a href="../admin/ecommerce/products/edit/6" title="Nikon HD camera">
+        <img src="../storage/products/9-p-150x150.jpg" alt="Nikon HD camera" width="50">
+    </a>
+    </td><td class=" text-left column-key-name"><a href="../admin/edit.html">Nikon HD camera</a></td><td class=" text-left column-key-price">$10.06 <del class="text-danger">$43.00</del></td><td class=" text-left column-key-quantity">17</td><td class=" text-left column-key-sku">SW-124-A0</td><td class=" text-center column-key-order"><a data-type="text" data-pk="6" data-url="../admin/ecommerce/products/update-order-by" data-value="0" data-title="Order" class="editable editable-click" href="#">0</a>
+    </td><td class=" text-center column-key-created_at">2021-03-28</td><td class=" text-center column-key-status"><span class="label-success status-label">Published</span></td><td class=" text-center"><div class="table-actions">
+        
+                            <a href="../admin/edit.html" class="btn btn-icon btn-sm btn-primary" data-toggle="tooltip" data-original-title="Edit"><i class="fa fa-edit"></i></a>
+                
+                            <a href="#" class="btn btn-icon btn-sm btn-danger deleteDialog" data-toggle="tooltip" data-section="../admin/ecommerce/products/6" role="button" data-original-title="Delete">
+                    <i class="fa fa-trash"></i>
+                </a>
+                </div></td></tr><tr role="row" class="odd"><td class="text-left no-sort dtr-control"><div class="text-left">
+        <div class="checkbox checkbox-primary table-checkbox">
+            <input type="checkbox" class="checkboxes" name="id[]" value="5">
+        </div>
+    </div></td><td class="column-key-id sorting_1">5</td><td class=" text-center column-key-image"><a href="../admin/ecommerce/products/edit/5" title="Smart Watch External">
+        <img src="../storage/products/1-p-150x150.jpg" alt="Smart Watch External" width="50">
+    </a>
+    </td><td class=" text-left column-key-name"><a href="../admin/edit.html">Smart Watch External</a></td><td class=" text-left column-key-price">$46.22 <del class="text-danger">$87.00</del></td><td class=" text-left column-key-quantity">19</td><td class=" text-left column-key-sku">SW-169-A0</td><td class=" text-center column-key-order"><a data-type="text" data-pk="5" data-url="../admin/ecommerce/products/update-order-by" data-value="0" data-title="Order" class="editable editable-click" href="#">0</a>
+    </td><td class=" text-center column-key-created_at">2021-03-28</td><td class=" text-center column-key-status"><span class="label-success status-label">Published</span></td><td class=" text-center"><div class="table-actions">
+        
+                            <a href="../admin/edit.html" class="btn btn-icon btn-sm btn-primary" data-toggle="tooltip" data-original-title="Edit"><i class="fa fa-edit"></i></a>
+                
+                            <a href="#" class="btn btn-icon btn-sm btn-danger deleteDialog" data-toggle="tooltip" data-section="../admin/ecommerce/products/5" role="button" data-original-title="Delete">
+                    <i class="fa fa-trash"></i>
+                </a>
+                </div></td></tr><tr role="row" class="even"><td class="text-left no-sort dtr-control"><div class="text-left">
+        <div class="checkbox checkbox-primary table-checkbox">
+            <input type="checkbox" class="checkboxes" name="id[]" value="4">
+        </div>
+    </div></td><td class="column-key-id sorting_1">4</td><td class=" text-center column-key-image"><a href="../admin/ecommerce/products/edit/4" title="Red &amp; Black Headphone">
+        <img src="../storage/products/5-p-150x150.jpg" alt="Red &amp; Black Headphone" width="50">
+    </a>
+    </td><td class=" text-left column-key-name"><a href="../admin/edit.html">Red &amp; Black Headphone</a></td><td class=" text-left column-key-price">$25.28 <del class="text-danger">$50.00</del></td><td class=" text-left column-key-quantity">15</td><td class=" text-left column-key-sku">SW-102-A0</td><td class=" text-center column-key-order"><a data-type="text" data-pk="4" data-url="../admin/ecommerce/products/update-order-by" data-value="0" data-title="Order" class="editable editable-click" href="#">0</a>
+    </td><td class=" text-center column-key-created_at">2021-03-28</td><td class=" text-center column-key-status"><span class="label-success status-label">Published</span></td><td class=" text-center"><div class="table-actions">
+        
+                            <a href="../admin/edit.html" class="btn btn-icon btn-sm btn-primary" data-toggle="tooltip" data-original-title="Edit"><i class="fa fa-edit"></i></a>
+                
+                            <a href="#" class="btn btn-icon btn-sm btn-danger deleteDialog" data-toggle="tooltip" data-section="../admin/ecommerce/products/4" role="button" data-original-title="Delete">
+                    <i class="fa fa-trash"></i>
+                </a>
+                </div></td></tr><tr role="row" class="odd"><td class="text-left no-sort dtr-control"><div class="text-left">
+        <div class="checkbox checkbox-primary table-checkbox">
+            <input type="checkbox" class="checkboxes" name="id[]" value="3">
+        </div>
+    </div></td><td class="column-key-id sorting_1">3</td><td class=" text-center column-key-image"><a href="../admin/ecommerce/products/edit/3" title="Beat Headphone">
+        <img src="../storage/products/2-p-150x150.jpg" alt="Beat Headphone" width="50">
+    </a>
+    </td><td class=" text-left column-key-name"><a href="../admin/edit.html">Beat Headphone</a></td><td class=" text-left column-key-price">$14.79 <del class="text-danger">$20.00</del></td><td class=" text-left column-key-quantity">20</td><td class=" text-left column-key-sku">SW-160-A0</td><td class=" text-center column-key-order"><a data-type="text" data-pk="3" data-url="../admin/ecommerce/products/update-order-by" data-value="0" data-title="Order" class="editable editable-click" href="#">0</a>
+    </td><td class=" text-center column-key-created_at">2021-03-28</td><td class=" text-center column-key-status"><span class="label-success status-label">Published</span></td><td class=" text-center"><div class="table-actions">
+        
+                            <a href="../admin/edit.html" class="btn btn-icon btn-sm btn-primary" data-toggle="tooltip" data-original-title="Edit"><i class="fa fa-edit"></i></a>
+                
+                            <a href="#" class="btn btn-icon btn-sm btn-danger deleteDialog" data-toggle="tooltip" data-section="../admin/ecommerce/products/3" role="button" data-original-title="Delete">
+                    <i class="fa fa-trash"></i>
+                </a>
+                </div></td></tr><tr role="row" class="even"><td class="text-left no-sort dtr-control"><div class="text-left">
+        <div class="checkbox checkbox-primary table-checkbox">
+            <input type="checkbox" class="checkboxes" name="id[]" value="2">
+        </div>
+    </div></td><td class="column-key-id sorting_1">2</td><td class=" text-center column-key-image"><a href="../admin/ecommerce/products/edit/2" title="Smart Watches">
+        <img src="../storage/products/10-p-150x150.jpg" alt="Smart Watches" width="50">
+    </a>
+    </td><td class=" text-left column-key-name"><a href="../admin/edit.html">Smart Watches</a></td><td class=" text-left column-key-price">$13.54 <del class="text-danger">$40.50</del></td><td class=" text-left column-key-quantity">20</td><td class=" text-left column-key-sku">SW-166-A0</td><td class=" text-center column-key-order"><a data-type="text" data-pk="2" data-url="../admin/ecommerce/products/update-order-by" data-value="0" data-title="Order" class="editable editable-click" href="#">0</a>
+    </td><td class=" text-center column-key-created_at">2021-03-28</td><td class=" text-center column-key-status"><span class="label-success status-label">Published</span></td><td class=" text-center"><div class="table-actions">
+        
+                            <a href="../admin/edit.html" class="btn btn-icon btn-sm btn-primary" data-toggle="tooltip" data-original-title="Edit"><i class="fa fa-edit"></i></a>
+                
+                            <a href="#" class="btn btn-icon btn-sm btn-danger deleteDialog" data-toggle="tooltip" data-section="../admin/ecommerce/products/2" role="button" data-original-title="Delete">
+                    <i class="fa fa-trash"></i>
+                </a>
+                </div></td></tr><tr role="row" class="odd"><td class="text-left no-sort dtr-control"><div class="text-left">
+        <div class="checkbox checkbox-primary table-checkbox">
+            <input type="checkbox" class="checkboxes" name="id[]" value="1">
+        </div>
+    </div></td><td class="column-key-id sorting_1">1</td><td class=" text-center column-key-image"><a href="../admin/ecommerce/products/edit/1" title="Dual Camera 20MP">
+        <img src="../storage/products/6-p-150x150.jpg" alt="Dual Camera 20MP" width="50">
+    </a>
+    </td><td class=" text-left column-key-name"><a href="../admin/edit.html">Dual Camera 20MP</a></td><td class=" text-left column-key-price">$18.75 <del class="text-danger">$80.25</del></td><td class=" text-left column-key-quantity">18</td><td class=" text-left column-key-sku">SW-190-A0</td><td class=" text-center column-key-order"><a data-type="text" data-pk="1" data-url="../admin/ecommerce/products/update-order-by" data-value="0" data-title="Order" class="editable editable-click" href="#">0</a>
+    </td><td class=" text-center column-key-created_at">2021-03-28</td><td class=" text-center column-key-status"><span class="label-success status-label">Published</span></td><td class=" text-center"><div class="table-actions">
+        
+                            <a href="../admin/edit.html" class="btn btn-icon btn-sm btn-primary" data-toggle="tooltip" data-original-title="Edit"><i class="fa fa-edit"></i></a>
+                
+                            <a href="#" class="btn btn-icon btn-sm btn-danger deleteDialog" data-toggle="tooltip" data-section="../admin/ecommerce/products/1" role="button" data-original-title="Delete">
+                    <i class="fa fa-trash"></i>
+                </a>
+                </div></td></tr></tbody></table><div class="datatables__info_wrap"><div class="dataTables_paginate paging_simple_numbers" id="table-products_paginate" style="display: none;"><ul class="pagination"><li class="paginate_button previous disabled" id="table-products_previous"><a href="#" aria-controls="table-products" aria-label="&amp;laquo; Previous" data-dt-idx="0" tabindex="0">« Previous</a></li><li class="paginate_button active"><a href="#" aria-controls="table-products" data-dt-idx="1" tabindex="0">1</a></li><li class="paginate_button next disabled" id="table-products_next"><a href="#" aria-controls="table-products" aria-label="Next &amp;raquo;" data-dt-idx="2" tabindex="0">Next »</a></li></ul></div><div class="dataTables_length" id="table-products_length" style="display: none;"><label><span class="dt-length-style"><select name="table-products_length" aria-controls="table-products" class="form-control input-sm"><option value="-1">All</option><option value="10">10</option><option value="30">30</option><option value="50">50</option></select></span></label></div><div class="dataTables_info" id="table-products_info" role="status" aria-live="polite"><span class="dt-length-records">
+        <i class="fa fa-globe"></i> <span class="d-none d-sm-inline">Show from</span> 1 to 9 in <span class="badge badge-secondary bold badge-dt">9</span> <span class="hidden-xs">records</span>
+    </span></div><div class="clearfix"></div></div></div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="modal fade modal-confirm-delete" tabindex="-1" role="dialog">
+    <div class="modal-dialog modal-sm">
+    <div class="modal-content">
+    <div class="modal-header bg-danger">
+    <h4 class="modal-title"><i class="til_img"></i><strong>Confirm delete</strong></h4>
+    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+    <span aria-hidden="true">×</span>
+    </button>
+    </div>
+    <div class="modal-body with-padding">
+    <div>Do you really want to delete this record?</div>
+    </div>
+    <div class="modal-footer">
+    <button class="float-left btn btn-warning" data-dismiss="modal">Cancel</button>
+    <button class="float-right btn btn-danger delete-crud-entry">Delete</button>
+    </div>
+    </div>
+    </div>
+    </div>
+    
+    <div class="modal fade delete-many-modal" tabindex="-1" role="dialog">
+    <div class="modal-dialog modal-sm">
+    <div class="modal-content">
+    <div class="modal-header bg-danger">
+    <h4 class="modal-title"><i class="til_img"></i><strong>Confirm delete</strong></h4>
+    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+    <span aria-hidden="true">×</span>
+    </button>
+    </div>
+    <div class="modal-body with-padding">
+    <div>Do you really want to delete selected record(s)?</div>
+    </div>
+    <div class="modal-footer">
+    <button class="float-left btn btn-warning" data-dismiss="modal">Cancel</button>
+    <button class="float-right btn btn-danger delete-many-entry-button">Delete</button>
+    </div>
+    </div>
+    </div>
+    </div>
+    
+    <div class="modal fade modal-bulk-change-items" tabindex="-1" role="dialog">
+    <div class="modal-dialog modal-sm">
+    <div class="modal-content">
+    <div class="modal-header bg-info">
+    <h4 class="modal-title"><i class="til_img"></i><strong>Bulk changes</strong></h4>
+    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+    <span aria-hidden="true">×</span>
+    </button>
+    </div>
+    <div class="modal-body with-padding">
+    <div><div class="modal-bulk-change-content"></div></div>
+    </div>
+    <div class="modal-footer">
+    <button class="float-left btn btn-warning" data-dismiss="modal">Cancel</button>
+    <button class="float-right btn btn-info confirm-bulk-change-button" data-load-url="../tables/bulk-change/data">Submit</button>
+    </div>
+    </div>
+    </div>
+    </div>
+    
+    </div>
+    </div>
+    </div>
+    <div class="clearfix"></div>
+    </div>
+    <div class="page-footer">
+    <div class="page-footer-inner">
+    <div class="row">
+    <div class="col-md-6">
+    &copy; 2021 All Right Reserved by Amir and Apurba
+    </div>
+    <div class="col-md-6 text-right">
+    Page loaded in 0.05s </div>
+    </div>
+    </div>
+    <div class="scroll-to-top">
+    <i class="icon-arrow-up-circle"></i>
+    </div>
+    </div>
+    </div>
+    <script type="text/javascript">
+        var BotbleVariables = BotbleVariables || {};
+    
+                BotbleVariables.languages = {
+                tables: {"id":"ID","name":"Name","slug":"Slug","title":"Title","order_by":"Order By","order":"Order","status":"Status","created_at":"Created At","updated_at":"Updated At","description":"Description","operations":"Operations","url":"URL","author":"Author","notes":"Notes","column":"Column","origin":"Origin","after_change":"After changes","views":"Views","browser":"Browser","session":"Session","activated":"activated","deactivated":"deactivated","is_featured":"Is featured","edit":"Edit","delete":"Delete","restore":"Restore","activate":"Activate","deactivate":"Deactivate","excel":"Excel","export":"Export","csv":"CSV","pdf":"PDF","print":"Print","reset":"Reset","reload":"Reload","display":"Display","all":"All","add_new":"Add New","action":"Actions","delete_entry":"Delete","view":"View Detail","save":"Save","show_from":"Show from","to":"to","in":"in","records":"records","no_data":"No data to display","no_record":"No record","confirm_delete":"Confirm delete","confirm_delete_msg":"Do you really want to delete this record?","confirm_delete_many_msg":"Do you really want to delete selected record(s)?","cancel":"Cancel","template":"Template","email":"Email","last_login":"Last login","shortcode":"Shortcode","image":"Image","bulk_changes":"Bulk changes","submit":"Submit"},
+                notices_msg: {"create_success_message":"Created successfully","update_success_message":"Updated successfully","delete_success_message":"Deleted successfully","success_header":"Success!","error_header":"Error!","no_select":"Please select at least one record to perform this action!","processing_request":"We are processing your request.","error":"Error!","success":"Success!","info":"Info!","enum":{"validate_message":"The :attribute value you have entered is invalid."}},
+                pagination: {"previous":"&laquo; Previous","next":"Next &raquo;"},
+                system: {
+                    'character_remain': 'character(s) remain'
+                },
+            };
+            BotbleVariables.authorized = "1";
+        </script>
+    <script src="../vendor/core/core/base/libraries/respond.min.js" type="text/javascript"></script>
+    <script src="../vendor/core/core/base/libraries/excanvas.min.js" type="text/javascript"></script>
+    <script src="../vendor/core/core/base/libraries/ie8.fix.min.js" type="text/javascript"></script>
+    <script src="../vendor/core/core/base/libraries/modernizr/modernizr.min.js" type="text/javascript"></script>
+    <script src="../vendor/core/core/base/libraries/select2/js/select2.min.js" type="text/javascript"></script>
+    <script src="../vendor/core/core/base/libraries/bootstrap-datepicker/js/bootstrap-datepicker.min.js" type="text/javascript"></script>
+    <script src="../vendor/core/core/base/libraries/jquery-cookie/jquery.cookie.js" type="text/javascript"></script>
+    <script src="../vendor/core/core/base/js/core.js" type="text/javascript"></script>
+    <script src="../vendor/core/core/base/libraries/toastr/toastr.min.js" type="text/javascript"></script>
+    <script src="../vendor/core/core/base/libraries/pace/pace.min.js" type="text/javascript"></script>
+    <script src="../vendor/core/core/base/libraries/mcustom-scrollbar/jquery.mCustomScrollbar.js" type="text/javascript"></script>
+    <script src="../vendor/core/core/base/libraries/stickytableheaders/jquery.stickytableheaders.js" type="text/javascript"></script>
+    <script src="../vendor/core/core/base/libraries/jquery-waypoints/jquery.waypoints.min.js" type="text/javascript"></script>
+    <script src="../vendor/core/core/base/libraries/spectrum/spectrum.js" type="text/javascript"></script>
+    <script src="../vendor/core/core/base/libraries/fancybox/jquery.fancybox.min.js" type="text/javascript"></script>
+    <script src="../vendor/core/core/base/libraries/bootstrap3-editable/js/bootstrap-editable.min.js" type="text/javascript"></script>
+    <script src="../vendor/core/core/base/libraries/datatables/media/js/jquery.dataTables.min.js" type="text/javascript"></script>
+    <script src="../vendor/core/core/base/libraries/datatables/media/js/dataTables.bootstrap.min.js" type="text/javascript"></script>
+    <script src="../vendor/core/core/base/libraries/datatables/extensions/Buttons/js/dataTables.buttons.min.js" type="text/javascript"></script>
+    <script src="../vendor/core/core/base/libraries/datatables/extensions/Buttons/js/buttons.bootstrap.min.js" type="text/javascript"></script>
+    <script src="../vendor/core/core/base/libraries/datatables/extensions/Responsive/js/dataTables.responsive.min.js" type="text/javascript"></script>
+    <script src="../vendor/core/core/base/libraries/moment-with-locales.min.js" type="text/javascript"></script>
+    <script src="../vendor/core/core/base/libraries/bootstrap3-typeahead.min.js" type="text/javascript"></script>
+    <script src="../vendor/core/core/table/js/table.js" type="text/javascript"></script>
+    <script src="../vendor/core/core/table/js/filter.js" type="text/javascript"></script>
+    <div class="modal fade media-modal" data-keyboard="false" tabindex="-1" role="dialog" id="rv_media_modal" aria-labelledby="myLargeModalLabel">
+    <div class="modal-dialog modal-full">
+    <div class="modal-content bb-loading">
+    <div class="modal-header">
+    <h4 class="modal-title"><i class="til_img"></i><strong>Media gallery</strong></h4>
+    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+    </div>
+    <div class="modal-body media-modal-body media-modal-loading" id="rv_media_body"></div>
+    <div class="loading-wrapper">
+    <div class="loader">
+    <svg class="circular" viewBox="25 25 50 50">
+    <circle class="path" cx="50" cy="50" r="20" fill="none" stroke-width="2" stroke-miterlimit="10"></circle>
+    </svg>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <script type="text/javascript">
+        RV_MEDIA_URL = {"base_url":"https:\/\/shopwise.botble.com","base":"https:\/\/shopwise.botble.com\/admin\/media","get_media":"https:\/\/shopwise.botble.com\/admin\/media\/list","create_folder":"https:\/\/shopwise.botble.com\/admin\/media\/folders\/create","popup":"https:\/\/shopwise.botble.com\/admin\/media\/popup","download":"https:\/\/shopwise.botble.com\/admin\/media\/download","upload_file":"https:\/\/shopwise.botble.com\/admin\/media\/files\/upload","get_breadcrumbs":"https:\/\/shopwise.botble.com\/admin\/media\/breadcrumbs","global_actions":"https:\/\/shopwise.botble.com\/admin\/media\/global-actions","media_upload_from_editor":"https:\/\/shopwise.botble.com\/admin\/media\/files\/upload-from-editor"};
+        RV_MEDIA_CONFIG = {"permissions":["folders.create","folders.edit","folders.trash","folders.destroy","files.create","files.edit","files.trash","files.destroy","files.favorite","folders.favorite"],"translations":{"name":"Name","url":"URL","full_url":"Full URL","size":"Size","mime_type":"Type","created_at":"Uploaded at","updated_at":"Modified at","nothing_selected":"Nothing is selected","visit_link":"Open link","no_item":{"all_media":{"icon":"fas fa-cloud-upload-alt","title":"Drop files and folders here","message":"Or use the upload button above"},"trash":{"icon":"fas fa-trash-alt","title":"There is nothing in your trash currently","message":"Delete files to move them to trash automatically. Delete files from trash to remove them permanently"},"favorites":{"icon":"fas fa-star","title":"You have not added anything to your favorites yet","message":"Add files to favorites to easily find them later"},"recent":{"icon":"far fa-clock","title":"You did not opened anything yet","message":"All recent files that you opened will be appeared here"},"default":{"icon":"fas fa-sync","title":"No items","message":"This directory has no item"}},"clipboard":{"success":"These file links has been copied to clipboard"},"message":{"error_header":"Error","success_header":"Success"},"download":{"error":"No files selected or cannot download these files"},"actions_list":{"basic":{"preview":"Preview"},"file":{"copy_link":"Copy link","rename":"Rename","make_copy":"Make a copy"},"user":{"favorite":"Add to favorite","remove_favorite":"Remove favorite"},"other":{"download":"Download","trash":"Move to trash","delete":"Delete permanently","restore":"Restore"}}},"pagination":{"paged":null,"posts_per_page":null,"in_process_get_media":false,"has_more":true},"chunk":{"enabled":false,"chunk_size":1048576,"max_file_size":1048576,"storage":{"chunks":"chunks","disk":"local"},"clear":{"timestamp":"-3 HOURS","schedule":{"enabled":true,"cron":"25 * * * *"}},"chunk":{"name":{"use":{"session":true,"browser":false}}}}}
+    </script>
+    <link href="../vendor/core/core/media/css/media.css?v=1617891106" rel="stylesheet" type="text/css">
+    <script src="../vendor/core/core/media/js/integrate.js?v=1617891106" type="text/javascript"></script>
+    <div id="stack-footer">
+    <script type="text/javascript">(function(window,$){window.LaravelDataTables=window.LaravelDataTables||{};window.LaravelDataTables["table-products"]=$("#table-products").DataTable({"serverSide":true,"processing":true,"ajax":{"url":"https:\/\/shopwise.botble.com\/admin\/ecommerce\/products?"},"columns":[{"name":"checkbox","data":"checkbox","width":"10px","class":"text-left no-sort","title":"<input class=\"table-check-all\" data-set=\".dataTable .checkboxes\" type=\"checkbox\">","orderable":false,"searchable":false},{"name":"ec_products.id","data":"id","title":"ID","width":"20px","class":" column-key-id","orderable":true,"searchable":true},{"name":"ec_products.images","data":"image","title":"Thumbnail","width":"100px","class":"text-center column-key-image","orderable":true,"searchable":true},{"name":"ec_products.name","data":"name","title":"Name","class":"text-left column-key-name","orderable":true,"searchable":true},{"name":"ec_products.price","data":"price","title":"Price","class":"text-left column-key-price","orderable":true,"searchable":true},{"name":"ec_products.quantity","data":"quantity","title":"Quantity","class":"text-left column-key-quantity","orderable":true,"searchable":true},{"name":"ec_products.sku","data":"sku","title":"Sku","class":"text-left column-key-sku","orderable":true,"searchable":true},{"name":"ec_products.order","data":"order","title":"Order","width":"50px","class":"text-center column-key-order","orderable":true,"searchable":true},{"name":"ec_products.created_at","data":"created_at","title":"Created At","width":"100px","class":"text-center column-key-created_at","orderable":true,"searchable":true},{"name":"ec_products.status","data":"status","title":"Status","width":"100px","class":"text-center column-key-status","orderable":true,"searchable":true},{"name":"operations","data":"operations","title":"Operations","width":"134px","class":"text-center","orderable":false,"searchable":false}],"dom":"fBrt<'datatables__info_wrap'pli<'clearfix'>>","buttons":{"stateSave":true,"buttons":[{"className":"action-item","text":"<span data-action=\"create\" data-href=\"https:\/\/shopwise.botble.com\/admin\/ecommerce\/products\/create\"><i class=\"fa fa-plus\"><\/i> Create<\/span>"},"export","reload"]},"initComplete":function () {
+                if (jQuery().select2) {
+                    $(document).find(".select-multiple").select2({
+                        width: "100%",
+                        allowClear: true,
+                        placeholder: $(this).data("placeholder")
+                    });
+                    $(document).find(".select-search-full").select2({
+                        width: "100%"
+                    });
+                    $(document).find(".select-full").select2({
+                        width: "100%",
+                        minimumResultsForSearch: -1
+                    });
+                }
+            },"drawCallback":function () {
+                var pagination = $(this).closest(".dataTables_wrapper").find(".dataTables_paginate");
+                pagination.toggle(this.api().page.info().pages > 1);
+    
+                var data_count = this.api().data().count();
+    
+                var length_select = $(this).closest(".dataTables_wrapper").find(".dataTables_length");
+                var length_info = $(this).closest(".dataTables_wrapper").find(".dataTables_info");
+                length_select.toggle(data_count >= 10);
+                length_info.toggle(data_count > 0);
+    
+                if (jQuery().select2) {
+                    $(document).find(".select-multiple").select2({
+                        width: "100%",
+                        allowClear: true,
+                        placeholder: $(this).data("placeholder")
+                    });
+                    $(document).find(".select-search-full").select2({
+                        width: "100%"
+                    });
+                    $(document).find(".select-full").select2({
+                        width: "100%",
+                        minimumResultsForSearch: -1
+                    });
+                }
+    
+                $("[data-toggle=tooltip]").tooltip({
+                    placement: "top"
+                });
+            $(".editable").editable();},"paging":true,"searching":true,"info":true,"searchDelay":350,"bStateSave":true,"lengthMenu":[[-1,10,30,50],["All",10,30,50]],"pageLength":10,"bServerSide":true,"bDeferRender":true,"bProcessing":true,"language":{"aria":{"sortAscending":"orderby asc","sortDescending":"orderby desc","paginate":{"next":"Next &raquo;","previous":"&laquo; Previous"}},"emptyTable":"No data to display","info":"<span class=\"dt-length-records\">\n    <i class=\"fa fa-globe\"><\/i> <span class=\"d-none d-sm-inline\">Show from<\/span> _START_ to _END_ in <span class=\"badge badge-secondary bold badge-dt\">_TOTAL_<\/span> <span class=\"hidden-xs\">records<\/span>\n<\/span>","infoEmpty":"No record","lengthMenu":"<span class=\"dt-length-style\">_MENU_<\/span>","search":"","searchPlaceholder":"Search...","zeroRecords":"No record","processing":{},"paginate":{"next":"Next &raquo;","previous":"&laquo; Previous"},"infoFiltered":"(filtered from _MAX_ total records)"},"aaSorting":[[1,"desc"]],"responsive":true,"autoWidth":false});})(window,jQuery);
+    </script>
+     </div>
+    
+    
+    </body></html>

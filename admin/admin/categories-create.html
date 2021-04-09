@@ -1,0 +1,449 @@
+<html lang="en"><!--<![endif]--><head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Manage Products - Neon</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link media="all" type="text/css" rel="stylesheet" href="../vendor/core/core/base/libraries/font-awesome/css/fontawesome.min.css">
+    <link media="all" type="text/css" rel="stylesheet" href="../vendor/core/core/base/libraries/simple-line-icons/css/simple-line-icons.css">
+    <link media="all" type="text/css" rel="stylesheet" href="../vendor/core/core/base/libraries/select2/css/select2.min.css">
+    <link media="all" type="text/css" rel="stylesheet" href="../vendor/core/core/base/libraries/select2/css/select2-bootstrap.min.css">
+    <link media="all" type="text/css" rel="stylesheet" href="../vendor/core/core/base/libraries/pace/pace-theme-minimal.css">
+    <link media="all" type="text/css" rel="stylesheet" href="../vendor/core/core/base/libraries/toastr/toastr.min.css">
+    <link media="all" type="text/css" rel="stylesheet" href="../vendor/core/core/base/libraries/mcustom-scrollbar/jquery.mCustomScrollbar.css">
+    <link media="all" type="text/css" rel="stylesheet" href="../vendor/core/core/base/libraries/bootstrap-datepicker/css/bootstrap-datepicker3.min.css">
+    <link media="all" type="text/css" rel="stylesheet" href="../vendor/core/core/base/libraries/spectrum/spectrum.css">
+    <link media="all" type="text/css" rel="stylesheet" href="../vendor/core/core/base/libraries/fancybox/jquery.fancybox.min.css">
+    <link media="all" type="text/css" rel="stylesheet" href="../vendor/core/core/base/libraries/bootstrap3-editable/css/bootstrap-editable.css">
+    <link media="all" type="text/css" rel="stylesheet" href="../vendor/core/core/base/libraries/datatables/media/css/dataTables.bootstrap.min.css">
+    <link media="all" type="text/css" rel="stylesheet" href="../vendor/core/core/base/libraries/datatables/extensions/Buttons/css/buttons.bootstrap.min.css">
+    <link media="all" type="text/css" rel="stylesheet" href="../vendor/core/core/base/libraries/datatables/extensions/Responsive/css/responsive.bootstrap.min.css">
+    <link media="all" type="text/css" rel="stylesheet" href="../vendor/core/core/base/css/core.css">
+    <link media="all" type="text/css" rel="stylesheet" href="../vendor/core/core/table/css/table.css">
+    <link media="all" type="text/css" rel="stylesheet" href="../vendor/core/core/base/css/themes/light.css">
+    <script src="../vendor/core/core/base/js/app.js" type="text/javascript"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-mousewheel/3.1.11/jquery.mousewheel.min.js"></script></head>
+    <body class="page-sidebar-closed-hide-logo page-content-white page-container-bg-solid  pace-done" style=""><div class="pace  pace-inactive"><div class="pace-progress" data-progress-text="100%" data-progress="99" style="transform: translate3d(100%, 0px, 0px);">
+      <div class="pace-progress-inner"></div>
+    </div>
+    <div class="pace-activity"></div></div>
+    <div id="global-icon-symbols" data-tg-refresh="global-icon-symbols" data-tg-refresh-always="true" style="display: none;">
+    
+    </div>
+    <div class="page-wrapper">
+    <div class="page-header navbar navbar-static-top">
+        <div class="page-header-inner">
+            <div class="page-logo">
+            <a href="vendor-dashboard.html">
+            <img src="../../logos/neon_b.png" alt="logo" style="width: 100; height: auto; margin-bottom: 20px; margin-top: -20px;">
+            </a>
+            <div class="menu-toggler sidebar-toggler">
+            <span></span>
+            </div>
+            </div>
+            <a href="javascript:;" class="menu-toggler responsive-toggler" data-toggle="collapse" data-target=".navbar-collapse">
+            <span></span>
+            </a>
+            <div class="top-menu">
+            <ul class="nav navbar-nav float-right">
+            <li class="dropdown dropdown-user">
+            <a href="javascript:void(0)" class="dropdown-toggle dropdown-header-name" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <span class="username">Company Name </span>
+            <i class="fa fa-angle-down"></i>
+            </a>
+            <ul class="dropdown-menu">
+            <li><a href="#" class="btn-logout"><i class="icon-key"></i> Logout</a></li>
+            </ul>
+            </li>
+            </ul>
+            </div>
+            </div>
+            </div>
+            <div class="clearfix"></div>
+            <div class="page-container">
+            <div class="page-sidebar-wrapper">
+            <div class="page-sidebar navbar-collapse collapse">
+            <div class="sidebar">
+            <div class="sidebar-content">
+            <ul class="page-sidebar-menu page-header-fixed" data-keep-expanded="false" data-auto-scroll="true" data-slide-speed="200" data-height="883">
+            <li class="nav-item  active " id="cms-core-dashboard">
+            <a href="../admin" class="nav-link nav-toggle">
+            <i class="fa fa-home"></i>
+            <span class="title">
+            Dashboard
+            </span>
+            </a>
+            </li>
+            <li class="nav-item " id="cms-plugins-ecommerce">
+            <a href="../admin/ecommerce/products.html" class="nav-link nav-toggle">
+            <i class="fa fa-shopping-cart"></i>
+            <span class="title">
+            Ecommerce
+            </span>
+            <span class="arrow "></span> </a>
+            <ul class="sub-menu  hidden-ul ">
+        
+ 
+                <li class="nav-item " id="cms-plugins-ecommerce.product">
+                    <a href="../admin/admin-products.html" class="nav-link">
+                    <i class="fa fa-camera"></i>
+                    Manage Products
+                    
+                    </a>
+                    </li>
+                    <li class="nav-item " id="cms-plugins-ecommerce.product">
+                        <a href="../admin/flash-sale.html" class="nav-link">
+                        <i class="fa fa-bolt"></i>
+                        Flash Sales
+                        
+                        </a>
+                        </li>
+                        <li class="nav-item " id="cms-plugins-ecommerce.product">
+                            <a href="../admin/orders.html" class="nav-link">
+                            <i class="fa fa-shopping-bag"></i>
+                            Manage Orders
+                            
+                            </a>
+                        </li>
+            
+            
+            
+
+            </ul>
+            </li>
+            </ul>
+            </div>
+            </div>
+            </div>
+            </div>
+            <div class="page-content-wrapper">
+            <div class="page-content " style="min-height: 850px;">
+            <ol class="breadcrumb">
+            <li class="breadcrumb-item active">Dashboard</li>
+            </ol>
+            <div class="clearfix"></div>
+            <div id="main">
+                <form method="POST" action="https://shopwise.botble.com/admin/ecommerce/product-categories/create" accept-charset="UTF-8" id="form_c30a5a4cd85f9b0ac0a648a44c31e07c" novalidate="novalidate"><input name="_token" type="hidden" value="5g8HnBMpnvvKskASpOEfYRgVBVlmNlYFSu3G5JUm">
+                <div class="row">
+                <div class="col-md-9">
+                <div class="main-form">
+                <div class="form-body">
+                <div class="form-group">
+                <label for="name" class="control-label required" aria-required="true">Name</label>
+                <input class="form-control" placeholder="Name" data-counter="120" name="name" type="text" id="name">
+                </div>
+                <div class="form-group ">
+                <div id="edit-slug-box" dir="ltr" class="hidden">
+                <label class="control-label required" for="current-slug" aria-required="true">Permalink:</label>
+                <span id="sample-permalink" class="d-inline-block">
+                <a class="permalink" target="_blank" href="https://shopwise.botble.com/product-categories/?preview=true">
+                <span class="default-slug">https://shopwise.botble.com/product-categories/<span id="editable-post-name"></span></span>
+                </a>
+                </span>
+                <span id="edit-slug-buttons">
+                <button type="button" class="btn btn-secondary" id="change_slug">Edit</button>
+                <button type="button" class="save btn btn-secondary" id="btn-ok">OK</button>
+                <button type="button" class="cancel button-link">Cancel</button>
+                <a class="btn btn-info btn-preview" target="_blank" href="https://shopwise.botble.com/product-categories/?preview=true">Preview</a>
+                </span>
+                </div>
+                <input type="hidden" id="current-slug" name="slug" value="">
+                <div data-url="https://shopwise.botble.com/ajax/slug/create" data-view="https://shopwise.botble.com/product-categories/" id="slug_id" data-id="0"></div>
+                <input type="hidden" name="slug_id" value="0">
+                </div>
+                <input type="hidden" name="model" value="Botble\Ecommerce\Models\ProductCategory">
+                <div class="form-group">
+                <label for="parent_id" class="control-label required" aria-required="true">Parent</label>
+                <select class="select-search-full select2-hidden-accessible" id="parent_id" name="parent_id" tabindex="-1" aria-hidden="true"><option value="0">None</option><option value="1"> Television</option><option value="2"> Mobile</option><option value="3"> Headphone</option><option value="4"> Watches</option><option value="5"> Game</option><option value="6"> Camera</option><option value="7"> Audio</option><option value="8"> Mobile &amp; Tablet</option><option value="9"> Accessories</option><option value="10"> Home Audio &amp; Theater</option><option value="11"> Tv &amp; Smart Box</option><option value="12"> Printer</option><option value="13"> Computer</option><option value="14"> Fax Machine</option><option value="15"> Mouse</option><option value="16"> Hic sed et eos.</option><option value="17"> Et at culpa omnis.</option><option value="18"> A alias enim totam nemo.</option><option value="19"> Non saepe in sint quis.</option><option value="20"> Est ex rerum modi aut.</option><option value="21"> Debitis ea impedit qui.</option><option value="22"> Voluptas eos ea sint.</option><option value="23"> Magnam fuga iure atque.</option><option value="24"> Magni iure et enim.</option><option value="25"> Ipsam et non rem magni.</option><option value="26"> Cum error numquam velit.</option><option value="27"> At inventore dolor qui.</option><option value="28"> Nam illum vel dicta.</option><option value="29"> Ut ea doloremque soluta.</option><option value="30"> Maiores impedit qui ut.</option><option value="31"> Voluptas id maiores est.</option><option value="32"> Id voluptates harum non.</option><option value="33"> Et ut qui aut qui.</option><option value="34"> Aut in unde consequatur.</option><option value="35"> Ut ipsa qui optio.</option></select><span class="select2 select2-container select2-container--default" dir="ltr" style="width: 100%;"><span class="selection"><span class="select2-selection select2-selection--single" role="combobox" aria-haspopup="true" aria-expanded="false" tabindex="0" aria-labelledby="select2-parent_id-container"><span class="select2-selection__rendered" id="select2-parent_id-container" title="None">None</span><span class="select2-selection__arrow" role="presentation"><b role="presentation"></b></span></span></span><span class="dropdown-wrapper" aria-hidden="true"></span></span>
+                </div>
+                <div class="form-group">
+                <label for="description" class="control-label">Description</label>
+                <div style="height: 34px;">
+                <span class="editor-action-item action-show-hide-editor">
+                <button class="btn btn-primary show-hide-editor-btn" type="button" data-result="description">Show/Hide Editor</button>
+                </span>
+                <span class="editor-action-item">
+                <a href="#" class="btn_gallery btn btn-primary" data-result="description" data-multiple="true" data-action="media-insert-ckeditor">
+                <i class="far fa-image"></i> Add media
+                </a>
+                </span>
+                </div>
+                <div class="clearfix"></div>
+                <textarea cols="120" rows="10"></textarea>
+            </div>
+                <div class="form-group">
+                <label for="order" class="control-label">Order</label>
+                <input class="form-control" placeholder="Order by" name="order" type="number" value="0" id="order">
+                </div>
+                <div class="clearfix"></div>
+                </div>
+                </div>
+                <div id="advanced-sortables" class="meta-box-sortables">
+                <div id="additional_product_category_fields" class="widget meta-boxes">
+                <div class="widget-title">
+                <h4><span>Addition Information</span></h4>
+                </div>
+                <div class="widget-body">
+                <div class="form-group">
+                    <textarea cols="120" rows="10"></textarea>
+            </div>
+                </div>
+                </div><div id="seo_wrap" class="widget meta-boxes">
+                <div class="widget-title">
+                <h4><span>Search Engine Optimize</span></h4>
+                </div>
+                <div class="widget-body">
+                <a href="#" class="btn-trigger-show-seo-detail">Edit SEO meta</a>
+                <div class="seo-preview">
+                <p class="default-seo-description ">Setup meta title &amp; description to make your site easy to discovered on search engines such as Google</p>
+                <div class="existed-seo-meta  hidden ">
+                <span class="page-title-seo">
+                </span>
+                <div class="page-url-seo ws-nm">
+                <p>https://shopwise.botble.com/product-categories/</p>
+                </div>
+                <div class="ws-nm">
+                <span style="color: #70757a;">Apr 09, 2021 - </span>
+                <span class="page-description-seo">
+                </span>
+                </div>
+                </div>
+                </div>
+                <div class="seo-edit-section hidden">
+                <hr>
+                <div class="form-group">
+                <label for="seo_title" class="control-label">SEO Title</label>
+                <input class="form-control" id="seo_title" placeholder="SEO Title" data-counter="120" name="seo_meta[seo_title]" type="text">
+                </div>
+                <div class="form-group">
+                <label for="seo_description" class="control-label">SEO description</label>
+                <textarea class="form-control" rows="3" id="seo_description" placeholder="SEO description" data-counter="155" name="seo_meta[seo_description]" cols="50"></textarea>
+                </div>
+                </div>
+                </div>
+                </div>
+                </div>
+                </div>
+                <div class="col-md-3 right-sidebar">
+                <div class="widget meta-boxes form-actions form-actions-default action-horizontal">
+                <div class="widget-title">
+                <h4>
+                <span>Publish</span>
+                </h4>
+                </div>
+                <div class="widget-body">
+                <div class="btn-set">
+                <button type="submit" name="submit" value="save" class="btn btn-info">
+                <i class="fa fa-save"></i> Save
+                </button>
+                &nbsp;
+                <button type="submit" name="submit" value="apply" class="btn btn-success">
+                <i class="fa fa-check-circle"></i> Save &amp; Edit
+                </button>
+                </div>
+                </div>
+                </div>
+                <div id="waypoint"></div>
+                <div class="form-actions form-actions-fixed-top hidden">
+                <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="https://shopwise.botble.com/admin">Dashboard</a></li>
+                <li class="breadcrumb-item"><a href="https://shopwise.botble.com/admin/ecommerce/products">Ecommerce</a></li>
+                <li class="breadcrumb-item"><a href="https://shopwise.botble.com/admin/ecommerce/product-categories">Product categories</a></li>
+                <li class="breadcrumb-item active">Create new product category</li>
+                </ol>
+                <div class="btn-set">
+                <button type="submit" name="submit" value="save" class="btn btn-info">
+                <i class="fa fa-save"></i> Save
+                </button>
+                &nbsp;
+                <button type="submit" name="submit" value="apply" class="btn btn-success">
+                <i class="fa fa-check-circle"></i> Save &amp; Edit
+                </button>
+                </div>
+                </div>
+                <div class="widget meta-boxes">
+                <div class="widget-title">
+                <h4><label for="status" class="control-label required" aria-required="true">Status</label></h4>
+                </div>
+                <div class="widget-body">
+                <div class="ui-select-wrapper form-group">
+                <select class="form-control ui-select ui-select" id="status" name="status"><option value="published">Published</option><option value="draft">Draft</option><option value="pending">Pending</option></select>
+                <svg class="svg-next-icon svg-next-icon-size-16">
+                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#select-chevron"></use>
+                </svg>
+                </div>
+                </div>
+                </div>
+                <div class="widget meta-boxes">
+                <div class="widget-title">
+                <h4><label for="image" class="control-label">Image</label></h4>
+                </div>
+                <div class="widget-body">
+                <div class="image-box">
+                <input type="hidden" name="image" value="" class="image-data">
+                <div class="preview-image-wrapper ">
+                <img src="https://shopwise.botble.com/vendor/core/core/base/images/placeholder.png" alt="Preview image" class="preview_image" width="150">
+                <a class="btn_remove_image" title="Remove image">
+                <i class="fa fa-times"></i>
+                </a>
+                </div>
+                <div class="image-box-actions">
+                 <a href="#" class="btn_gallery" data-result="image" data-action="select-image">
+                Choose image
+                </a>
+                </div>
+                </div>
+                </div>
+                </div>
+                <div class="widget meta-boxes">
+                <div class="widget-title">
+                <h4><label for="is_featured" class="control-label">Is featured?</label></h4>
+                </div>
+                <div class="widget-body">
+                <div class="onoffswitch">
+                <input type="hidden" name="is_featured" value="0">
+                <input type="checkbox" name="is_featured" class="onoffswitch-checkbox" id="is_featured" value="1">
+                <label class="onoffswitch-label" for="is_featured">
+                <span class="onoffswitch-inner"></span>
+                <span class="onoffswitch-switch"></span>
+                </label>
+                </div>
+                </div>
+                </div>
+                </div>
+                </div>
+                </form>
+                </div>
+    
+    </div>
+    </div>
+    </div>
+    <div class="clearfix"></div>
+    </div>
+    <div class="page-footer">
+    <div class="page-footer-inner">
+    <div class="row">
+    <div class="col-md-6">
+    &copy; 2021 All Right Reserved by Amir and Apurba
+    </div>
+    <div class="col-md-6 text-right">
+    Page loaded in 0.05s </div>
+    </div>
+    </div>
+    <div class="scroll-to-top">
+    <i class="icon-arrow-up-circle"></i>
+    </div>
+    </div>
+    </div>
+    <script type="text/javascript">
+        var BotbleVariables = BotbleVariables || {};
+    
+                BotbleVariables.languages = {
+                tables: {"id":"ID","name":"Name","slug":"Slug","title":"Title","order_by":"Order By","order":"Order","status":"Status","created_at":"Created At","updated_at":"Updated At","description":"Description","operations":"Operations","url":"URL","author":"Author","notes":"Notes","column":"Column","origin":"Origin","after_change":"After changes","views":"Views","browser":"Browser","session":"Session","activated":"activated","deactivated":"deactivated","is_featured":"Is featured","edit":"Edit","delete":"Delete","restore":"Restore","activate":"Activate","deactivate":"Deactivate","excel":"Excel","export":"Export","csv":"CSV","pdf":"PDF","print":"Print","reset":"Reset","reload":"Reload","display":"Display","all":"All","add_new":"Add New","action":"Actions","delete_entry":"Delete","view":"View Detail","save":"Save","show_from":"Show from","to":"to","in":"in","records":"records","no_data":"No data to display","no_record":"No record","confirm_delete":"Confirm delete","confirm_delete_msg":"Do you really want to delete this record?","confirm_delete_many_msg":"Do you really want to delete selected record(s)?","cancel":"Cancel","template":"Template","email":"Email","last_login":"Last login","shortcode":"Shortcode","image":"Image","bulk_changes":"Bulk changes","submit":"Submit"},
+                notices_msg: {"create_success_message":"Created successfully","update_success_message":"Updated successfully","delete_success_message":"Deleted successfully","success_header":"Success!","error_header":"Error!","no_select":"Please select at least one record to perform this action!","processing_request":"We are processing your request.","error":"Error!","success":"Success!","info":"Info!","enum":{"validate_message":"The :attribute value you have entered is invalid."}},
+                pagination: {"previous":"&laquo; Previous","next":"Next &raquo;"},
+                system: {
+                    'character_remain': 'character(s) remain'
+                },
+            };
+            BotbleVariables.authorized = "1";
+        </script>
+    <script src="../vendor/core/core/base/libraries/respond.min.js" type="text/javascript"></script>
+    <script src="../vendor/core/core/base/libraries/excanvas.min.js" type="text/javascript"></script>
+    <script src="../vendor/core/core/base/libraries/ie8.fix.min.js" type="text/javascript"></script>
+    <script src="../vendor/core/core/base/libraries/modernizr/modernizr.min.js" type="text/javascript"></script>
+    <script src="../vendor/core/core/base/libraries/select2/js/select2.min.js" type="text/javascript"></script>
+    <script src="../vendor/core/core/base/libraries/bootstrap-datepicker/js/bootstrap-datepicker.min.js" type="text/javascript"></script>
+    <script src="../vendor/core/core/base/libraries/jquery-cookie/jquery.cookie.js" type="text/javascript"></script>
+    <script src="../vendor/core/core/base/js/core.js" type="text/javascript"></script>
+    <script src="../vendor/core/core/base/libraries/toastr/toastr.min.js" type="text/javascript"></script>
+    <script src="../vendor/core/core/base/libraries/pace/pace.min.js" type="text/javascript"></script>
+    <script src="../vendor/core/core/base/libraries/mcustom-scrollbar/jquery.mCustomScrollbar.js" type="text/javascript"></script>
+    <script src="../vendor/core/core/base/libraries/stickytableheaders/jquery.stickytableheaders.js" type="text/javascript"></script>
+    <script src="../vendor/core/core/base/libraries/jquery-waypoints/jquery.waypoints.min.js" type="text/javascript"></script>
+    <script src="../vendor/core/core/base/libraries/spectrum/spectrum.js" type="text/javascript"></script>
+    <script src="../vendor/core/core/base/libraries/fancybox/jquery.fancybox.min.js" type="text/javascript"></script>
+    <script src="../vendor/core/core/base/libraries/bootstrap3-editable/js/bootstrap-editable.min.js" type="text/javascript"></script>
+    <script src="../vendor/core/core/base/libraries/datatables/media/js/jquery.dataTables.min.js" type="text/javascript"></script>
+    <script src="../vendor/core/core/base/libraries/datatables/media/js/dataTables.bootstrap.min.js" type="text/javascript"></script>
+    <script src="../vendor/core/core/base/libraries/datatables/extensions/Buttons/js/dataTables.buttons.min.js" type="text/javascript"></script>
+    <script src="../vendor/core/core/base/libraries/datatables/extensions/Buttons/js/buttons.bootstrap.min.js" type="text/javascript"></script>
+    <script src="../vendor/core/core/base/libraries/datatables/extensions/Responsive/js/dataTables.responsive.min.js" type="text/javascript"></script>
+    <script src="../vendor/core/core/base/libraries/moment-with-locales.min.js" type="text/javascript"></script>
+    <script src="../vendor/core/core/base/libraries/bootstrap3-typeahead.min.js" type="text/javascript"></script>
+    <script src="../vendor/core/core/table/js/table.js" type="text/javascript"></script>
+    <script src="../vendor/core/core/table/js/filter.js" type="text/javascript"></script>
+    <div class="modal fade media-modal" data-keyboard="false" tabindex="-1" role="dialog" id="rv_media_modal" aria-labelledby="myLargeModalLabel">
+    <div class="modal-dialog modal-full">
+    <div class="modal-content bb-loading">
+    <div class="modal-header">
+    <h4 class="modal-title"><i class="til_img"></i><strong>Media gallery</strong></h4>
+    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+    </div>
+    <div class="modal-body media-modal-body media-modal-loading" id="rv_media_body"></div>
+    <div class="loading-wrapper">
+    <div class="loader">
+    <svg class="circular" viewBox="25 25 50 50">
+    <circle class="path" cx="50" cy="50" r="20" fill="none" stroke-width="2" stroke-miterlimit="10"></circle>
+    </svg>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <script type="text/javascript">
+        RV_MEDIA_URL = {"base_url":"https:\/\/shopwise.botble.com","base":"https:\/\/shopwise.botble.com\/admin\/media","get_media":"https:\/\/shopwise.botble.com\/admin\/media\/list","create_folder":"https:\/\/shopwise.botble.com\/admin\/media\/folders\/create","popup":"https:\/\/shopwise.botble.com\/admin\/media\/popup","download":"https:\/\/shopwise.botble.com\/admin\/media\/download","upload_file":"https:\/\/shopwise.botble.com\/admin\/media\/files\/upload","get_breadcrumbs":"https:\/\/shopwise.botble.com\/admin\/media\/breadcrumbs","global_actions":"https:\/\/shopwise.botble.com\/admin\/media\/global-actions","media_upload_from_editor":"https:\/\/shopwise.botble.com\/admin\/media\/files\/upload-from-editor"};
+        RV_MEDIA_CONFIG = {"permissions":["folders.create","folders.edit","folders.trash","folders.destroy","files.create","files.edit","files.trash","files.destroy","files.favorite","folders.favorite"],"translations":{"name":"Name","url":"URL","full_url":"Full URL","size":"Size","mime_type":"Type","created_at":"Uploaded at","updated_at":"Modified at","nothing_selected":"Nothing is selected","visit_link":"Open link","no_item":{"all_media":{"icon":"fas fa-cloud-upload-alt","title":"Drop files and folders here","message":"Or use the upload button above"},"trash":{"icon":"fas fa-trash-alt","title":"There is nothing in your trash currently","message":"Delete files to move them to trash automatically. Delete files from trash to remove them permanently"},"favorites":{"icon":"fas fa-star","title":"You have not added anything to your favorites yet","message":"Add files to favorites to easily find them later"},"recent":{"icon":"far fa-clock","title":"You did not opened anything yet","message":"All recent files that you opened will be appeared here"},"default":{"icon":"fas fa-sync","title":"No items","message":"This directory has no item"}},"clipboard":{"success":"These file links has been copied to clipboard"},"message":{"error_header":"Error","success_header":"Success"},"download":{"error":"No files selected or cannot download these files"},"actions_list":{"basic":{"preview":"Preview"},"file":{"copy_link":"Copy link","rename":"Rename","make_copy":"Make a copy"},"user":{"favorite":"Add to favorite","remove_favorite":"Remove favorite"},"other":{"download":"Download","trash":"Move to trash","delete":"Delete permanently","restore":"Restore"}}},"pagination":{"paged":null,"posts_per_page":null,"in_process_get_media":false,"has_more":true},"chunk":{"enabled":false,"chunk_size":1048576,"max_file_size":1048576,"storage":{"chunks":"chunks","disk":"local"},"clear":{"timestamp":"-3 HOURS","schedule":{"enabled":true,"cron":"25 * * * *"}},"chunk":{"name":{"use":{"session":true,"browser":false}}}}}
+    </script>
+    <link href="../vendor/core/core/media/css/media.css?v=1617891106" rel="stylesheet" type="text/css">
+    <script src="../vendor/core/core/media/js/integrate.js?v=1617891106" type="text/javascript"></script>
+    <div id="stack-footer">
+    <script type="text/javascript">(function(window,$){window.LaravelDataTables=window.LaravelDataTables||{};window.LaravelDataTables["table-products"]=$("#table-products").DataTable({"serverSide":true,"processing":true,"ajax":{"url":"https:\/\/shopwise.botble.com\/admin\/ecommerce\/products?"},"columns":[{"name":"checkbox","data":"checkbox","width":"10px","class":"text-left no-sort","title":"<input class=\"table-check-all\" data-set=\".dataTable .checkboxes\" type=\"checkbox\">","orderable":false,"searchable":false},{"name":"ec_products.id","data":"id","title":"ID","width":"20px","class":" column-key-id","orderable":true,"searchable":true},{"name":"ec_products.images","data":"image","title":"Thumbnail","width":"100px","class":"text-center column-key-image","orderable":true,"searchable":true},{"name":"ec_products.name","data":"name","title":"Name","class":"text-left column-key-name","orderable":true,"searchable":true},{"name":"ec_products.price","data":"price","title":"Price","class":"text-left column-key-price","orderable":true,"searchable":true},{"name":"ec_products.quantity","data":"quantity","title":"Quantity","class":"text-left column-key-quantity","orderable":true,"searchable":true},{"name":"ec_products.sku","data":"sku","title":"Sku","class":"text-left column-key-sku","orderable":true,"searchable":true},{"name":"ec_products.order","data":"order","title":"Order","width":"50px","class":"text-center column-key-order","orderable":true,"searchable":true},{"name":"ec_products.created_at","data":"created_at","title":"Created At","width":"100px","class":"text-center column-key-created_at","orderable":true,"searchable":true},{"name":"ec_products.status","data":"status","title":"Status","width":"100px","class":"text-center column-key-status","orderable":true,"searchable":true},{"name":"operations","data":"operations","title":"Operations","width":"134px","class":"text-center","orderable":false,"searchable":false}],"dom":"fBrt<'datatables__info_wrap'pli<'clearfix'>>","buttons":{"stateSave":true,"buttons":[{"className":"action-item","text":"<span data-action=\"create\" data-href=\"https:\/\/shopwise.botble.com\/admin\/ecommerce\/products\/create\"><i class=\"fa fa-plus\"><\/i> Create<\/span>"},"export","reload"]},"initComplete":function () {
+                if (jQuery().select2) {
+                    $(document).find(".select-multiple").select2({
+                        width: "100%",
+                        allowClear: true,
+                        placeholder: $(this).data("placeholder")
+                    });
+                    $(document).find(".select-search-full").select2({
+                        width: "100%"
+                    });
+                    $(document).find(".select-full").select2({
+                        width: "100%",
+                        minimumResultsForSearch: -1
+                    });
+                }
+            },"drawCallback":function () {
+                var pagination = $(this).closest(".dataTables_wrapper").find(".dataTables_paginate");
+                pagination.toggle(this.api().page.info().pages > 1);
+    
+                var data_count = this.api().data().count();
+    
+                var length_select = $(this).closest(".dataTables_wrapper").find(".dataTables_length");
+                var length_info = $(this).closest(".dataTables_wrapper").find(".dataTables_info");
+                length_select.toggle(data_count >= 10);
+                length_info.toggle(data_count > 0);
+    
+                if (jQuery().select2) {
+                    $(document).find(".select-multiple").select2({
+                        width: "100%",
+                        allowClear: true,
+                        placeholder: $(this).data("placeholder")
+                    });
+                    $(document).find(".select-search-full").select2({
+                        width: "100%"
+                    });
+                    $(document).find(".select-full").select2({
+                        width: "100%",
+                        minimumResultsForSearch: -1
+                    });
+                }
+    
+                $("[data-toggle=tooltip]").tooltip({
+                    placement: "top"
+                });
+            $(".editable").editable();},"paging":true,"searching":true,"info":true,"searchDelay":350,"bStateSave":true,"lengthMenu":[[-1,10,30,50],["All",10,30,50]],"pageLength":10,"bServerSide":true,"bDeferRender":true,"bProcessing":true,"language":{"aria":{"sortAscending":"orderby asc","sortDescending":"orderby desc","paginate":{"next":"Next &raquo;","previous":"&laquo; Previous"}},"emptyTable":"No data to display","info":"<span class=\"dt-length-records\">\n    <i class=\"fa fa-globe\"><\/i> <span class=\"d-none d-sm-inline\">Show from<\/span> _START_ to _END_ in <span class=\"badge badge-secondary bold badge-dt\">_TOTAL_<\/span> <span class=\"hidden-xs\">records<\/span>\n<\/span>","infoEmpty":"No record","lengthMenu":"<span class=\"dt-length-style\">_MENU_<\/span>","search":"","searchPlaceholder":"Search...","zeroRecords":"No record","processing":{},"paginate":{"next":"Next &raquo;","previous":"&laquo; Previous"},"infoFiltered":"(filtered from _MAX_ total records)"},"aaSorting":[[1,"desc"]],"responsive":true,"autoWidth":false});})(window,jQuery);
+    </script>
+     </div>
+    
+    
+    </body></html>
