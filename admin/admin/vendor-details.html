@@ -1,7 +1,7 @@
 <html lang="en"><!--<![endif]--><head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Manage Order - Neon</title>
+    <title>Vendor Requests - Neon</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link media="all" type="text/css" rel="stylesheet" href="../vendor/core/core/base/libraries/font-awesome/css/fontawesome.min.css">
     <link media="all" type="text/css" rel="stylesheet" href="../vendor/core/core/base/libraries/simple-line-icons/css/simple-line-icons.css">
@@ -133,8 +133,7 @@
                             Vendor Requests
                             </span>
                              </a>
-        
-         
+            
             
             
 
@@ -152,162 +151,131 @@
             </ol>
             <div class="clearfix"></div>
             <div id="main">
-                <div class="max-width-1036">
-                
-                <div class="flexbox-grid">
-                <div class="flexbox-content">
-                <div class="wrapper-content mb20">
-                <div class="pd-all-20">
-                <label class="title-product-main text-no-bold">Order information</label>
+                <form method="POST" action="../admin/customers/edit/1" accept-charset="UTF-8" id="form_e65205b2528ea7cbf46845603d4f4a35" novalidate="novalidate"><input name="_token" type="hidden" value="zpLy6q9xiKkJitlgs7aVKEJqYAVQFKCeJ6NHCwYf">
+                <div class="row">
+                <div class="col-md-9">
+                <div class="main-form">
+                <div class="form-body">
+                <div class="form-group">
+                <label for="name" class="control-label required" aria-required="true">Name</label>
+                <input class="form-control" placeholder="Name" data-counter="120" name="name" type="text" value="Jevis Bista">
                 </div>
-                <div class="pd-all-10-20 border-top-title-main">
-                <div class="clearfix">
-                <div class="table-wrapper p-none mb20 ps-relative">
-                <table class="table-normal">
-                <tbody>
-                <tr>
-                <td class="width-60-px min-width-60-px">
-                <div class="wrap-img"><img class="thumb-image thumb-image-cartorderlist" src="../storage/products/4-p-150x150.jpg" alt="Audio Equipment"></div>
-                </td>
-                <td class="pl5 p-r5">
-                 <a target="_blank" href="../admin/ecommerce/products/edit/7" title="Audio Equipment">Audio Equipment</a>
-                <p>
-                Color: Red <br>
-                Size: M
-                </p>
-                <p>SKU : <span>SW-186-A0</span></p>
-                </td>
-                <td class="pl5 p-r5 width-100-px min-width-100-px text-right">
-                <span>$22.47</span>
-                </td>
-                <td class="pl5 p-r5 width-20-px min-width-20-px text-center"> x</td>
-                <td class="pl5 p-r5 width-30-px min-width-30-px text-left">
-                <span class="item-quantity text-right">1</span>
-                </td>
-                <td class="pl5 p-r5 width-100-px min-width-130-px text-right">$22.47</td>
-                </tr>
-                </tbody>
-                </table>
+                <div class="form-group">
+                <label for="email" class="control-label required" aria-required="true">Email</label>
+                <input class="form-control" placeholder="Ex: example@gmail.com" data-counter="60" name="email" type="text" value="jevis.bista@email.com" >
+                </div>
+                <div class="form-group">
+                <label for="name" class="control-label required" aria-required="true">Company Name</label>
+                <input class="form-control" placeholder="Name" data-counter="120" name="cname" type="text" value="Comapny Name" >
+                </div>
+                 <div class="form-group">
+                <label for="name" class="control-label required" aria-required="true">Company Registration Year</label>
+                <input class="form-control" placeholder="Name" data-counter="120" name="year" type="number" value="2002">
+                </div>
+                 <div class="form-group">
+                <label for="name" class="control-label required" aria-required="true">Phone</label>
+                <input class="form-control" placeholder="Name" data-counter="120" name="phone" type="number" value="9876543210" >
+                </div>
+                <div class="form-group">
+                <label for="name" class="control-label required" aria-required="true">Website</label>
+                <input class="form-control" placeholder="Name" data-counter="120" name="website" type="text" value="www.neon.com.np">
+                </div>
+                <div class="form-group">
+                <label for="name" class="control-label required" aria-required="true">Address</label>
+                <input class="form-control" placeholder="Name" data-counter="120" name="address" type="text" value="Baneshwor, Kathmandu, Bagmati, Nepal 44600">
+                </div>
+                <div class="form-group">
+                    <div class="gallery-images-wrapper list-images">
+                        <div class="images-wrapper">
+                            <div data-name="images[]" class="text-center cursor-pointer js-btn-trigger-add-image default-placeholder-gallery-image ">
+                                <p><strong>Company Registration Office</strong></p>
+
+                                <img src="../../logos/image.png" alt="Image" width="120">
+                                <br>
+                            </div>
+                            <input type="hidden" name="images[]">
+                            <ul class="list-unstyled list-gallery-media-images hidden ui-sortable" style="">
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="gallery-images-wrapper list-images">
+                        <div class="images-wrapper">
+                            <div data-name="images[]" class="text-center cursor-pointer js-btn-trigger-add-image default-placeholder-gallery-image ">
+                                <p><strong>PAN or VAT</strong></p>
+
+                                <img src="../../logos/image.png" alt="Image" width="120">
+                                <br>
+                            </div>
+                            <input type="hidden" name="images[]">
+                            <ul class="list-unstyled list-gallery-media-images hidden ui-sortable" style="">
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="gallery-images-wrapper list-images">
+                        <div class="images-wrapper">
+                            <div data-name="images[]" class="text-center cursor-pointer js-btn-trigger-add-image default-placeholder-gallery-image ">
+                                <p><strong>ISO</strong></p>
+
+                                <img src="../../logos/image.png" alt="Image" width="120">
+                                <br>
+                            </div>
+                            <input type="hidden" name="images[]">
+                            <ul class="list-unstyled list-gallery-media-images hidden ui-sortable" style="">
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+ 
+               
+                <div class="clearfix"></div>
                 </div>
                 </div>
-                <div class="flexbox-grid-default">
-                <div class="flexbox-auto-content"></div>
-                <div class="flexbox-auto-content">
-                <div class="table-wrapper">
-                <table class="table-normal table-none-border">
-                <tbody>
-                <tr>
-                <td></td>
-                <td></td>
-                <td class="text-right p-sm-r">
-                Order amount:
-                </td>
-                <td class="text-right p-r5">$24.72</td>
-                </tr>
-                <tr>
-                <td colspan="3" class="text-right p-sm-r">
-                Total amount:
-                </td>
-                <td class="text-right p-r5">$24.72</td>
-                </tr>
-                </tbody>
-                </table>
+                </div>
+                <div class="col-md-3 right-sidebar">
+                <div class="widget meta-boxes form-actions form-actions-default action-horizontal">
+                <div class="widget-title">
+                <h4>
+                <span>Publish</span>
+                </h4>
+                </div>
+                <div class="widget-body">
+                <div class="btn-set">
+                &nbsp;
+                <button type="submit" name="submit" value="apply" class="btn btn-success">
+                <i class="fa fa-check-circle"></i> Accept 
+                </button>
+                <button type="submit" name="submit" value="apply" class="btn btn-failed">
+                    <i class="fa fa-times-circle"></i> Decline 
+                    </button>
                 </div>
                 </div>
                 </div>
+                <div id="waypoint"></div>
+                <div class="form-actions form-actions-fixed-top hidden">
+                <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="../admin">Dashboard</a></li>
+                <li class="breadcrumb-item"><a href="../admin/ecommerce/products">Ecommerce</a></li>
+                <li class="breadcrumb-item"><a href="../admin/customers">Customers</a></li>
+                <li class="breadcrumb-item active">Edit customer "Jevis Bista"</li>
+                </ol>
+                <div class="btn-set">
+
+                &nbsp;
+                <button type="submit" name="submit" value="apply" class="btn btn-success">
+                <i class="fa fa-check-circle"></i> Accept
+                </button>
+                <button type="submit" name="submit" value="apply" class="btn btn-failed">
+                    <i class="fa fa-times-circle"></i> Decline 
+                    </button>
                 </div>
                 </div>
-                <div class="wrapper-content mb20">
-                <div class="pd-all-20 p-none-b">
-                <label class="title-product-main text-no-bold">Additional information</label>
                 </div>
-                <div class="pd-all-10-20">
-                <form action="../admin/orders/edit/2">
-                <label class="text-title-field">Order note</label>
-                <textarea class="ui-text-area textarea-auto-height" name="description" placeholder="Note about order, payment method" rows="2" required></textarea>
-                <div class="mt15 mb15 text-right">
-                <button type="button" class="btn btn-primary btn-update-order">Order Completed</button>
                 </div>
                 </form>
-                </div>
-                </div>
-                </div>
-                <div class="flexbox-content flexbox-right">
-                <div class="wrapper-content mb20">
-                <div class="next-card-section p-none-b">
-                <div class="flexbox-grid-default">
-                <div class="flexbox-auto-content">
-                <label class="title-product-main"><strong>Customer</strong></label>
-                </div>
-                
-                </div>
-                </div>
-                <div class="next-card-section border-none-t">
-                <ul class="ws-nm">
-                <li class="overflow-ellipsis">
-                <div class="mb5">
-                <a class="hover-underline text-capitalize" href="#">Muhammed</a>
-                </div>
-                <ul class="ws-nm text-infor-subdued">
-                <li class="overflow-ellipsis"><a class="hover-underline" href="mailto:mintinet@gmail.com">mintinet@gmail.com</a></li>
-                <li><div>Don't have an account yet</div></li>
-                </ul>
-                </li>
-                </ul>
-                </div>
-                <div class="next-card-section">
-                <ul class="ws-nm">
-                <li class="clearfix">
-                <div class="flexbox-grid-default">
-                <div class="flexbox-auto-content">
-                <label class="title-text-second"><strong>Shipping address</strong></label>
-                </div>
-                </div>
-                </li>
-                <li class="text-infor-subdued mt15">
-                <div>Muhammed</div>
-                <div>
-                <a href="tel:05533332211">
-                <span><i class="fa fa-phone-square cursor-pointer mr5"></i></span>
-                <span>05533332211</span>
-                </a>
-                </div>
-                <div>
-                <div>Adresim</div>
-                <div>Şehitkamil</div>
-                <div>Gaziantep</div>
-                <div>Turkey</div>
-                <div>
-                <a target="_blank" class="hover-underline" href="https://maps.google.com/?q=Adresim, Şehitkamil, Gaziantep, Turkey">See maps</a>
-                </div>
-                </div>
-                </li>
-                </ul>
-                </div>
-                </div>
-                </div>
-                </div>
-                </div>
-                <div id="send-order-recover-email-modal" class="modal fade" tabindex="-1" role="dialog" data-backdrop="static" data-keyboard="false">
-                <div class="modal-dialog    modal-xs  ">
-                <div class="modal-content">
-                <div class="modal-header bg-info">
-                <h4 class="modal-title"><i class="til_img"></i><strong>Notice about incomplete order</strong></h4>
-                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
-                <span aria-hidden="true">×</span>
-                </button>
-                </div>
-                <div class="modal-body with-padding">
-                Remind email about uncompleted order will be send to <strong>mintinet@gmail.com</strong>?
-                </div>
-                <div class="modal-footer">
-                <button class="float-left btn btn-warning" data-dismiss="modal">Cancel</button>
-                <a class="float-right btn btn-info" id="confirm-send-recover-email-button" href="#">Send</a>
-                </div>
-                </div>
-                </div>
-                </div>
-                
                 </div>
     
     </div>
